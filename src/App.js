@@ -1,6 +1,6 @@
 import Navbar from "./Components/AppComponents/Navbar";
 import Home from "./Components/Pages/Home";
-import './Styles/docs.css';
+// import './Styles/docs.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,24 +9,10 @@ import {
 import About from "./Components/Pages/About";
 
 function App () {
-  const pages = [
-    {
-      pageTitle: 'Home',
-      a: '/',
-      status: 'active',
-      sno: '1'
-    },
-    {
-      pageTitle: 'About',
-      a: '/about',
-      status: 'active',
-      sno: '2'
-    }
-  ];
 
   return (
     <Router>
-      <Navbar title="Alarms & Timer" mode='light' pages={ pages } />
+      <Navbar title="Alarms & Timer" mode='light' />
       <Switch>
         <Route exact path='/' component={ Home } />
         <Route path='/about' component={ About } />

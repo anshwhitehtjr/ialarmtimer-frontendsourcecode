@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import AlertItem from './AlertItem';
+import AlarmItem from './AlarmItem';
 import OptionsGenerator from './OptionsGenerator';
 
-const Alert = () => {
+const Alarm = () => {
     const [edit, setEdit] = useState(false);
     const [addAlarm, setAlarm] = useState(false);
     const possibleHours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -22,7 +22,7 @@ const Alert = () => {
     return (
         <div className="bd-example">
             <div className="row row-cols-1 row-cols-md-4 g-4">
-                <AlertItem
+                <AlarmItem
                     isEdit={ edit }
                     time='7:00am'
                     desc="This is a desc bro, but please wake me up on 7am as i have exam" />
@@ -108,4 +108,4 @@ const Alert = () => {
     );
 };
 
-export default Alert;
+export default Alarm;

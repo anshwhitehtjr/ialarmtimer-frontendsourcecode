@@ -1,12 +1,12 @@
 import React from 'react';
-import Alert from '../AppComponents/Alert';
+import Alarm from '../AppComponents/Alarm';
 
 const Home = () => {
     return (
         <>
             <div className="container">
                 <h1>Your Alarms</h1>
-                <Alert />
+                <Alarm />
             </div>
         </>
     );

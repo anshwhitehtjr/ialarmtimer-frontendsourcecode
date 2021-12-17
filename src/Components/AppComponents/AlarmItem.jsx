@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AlertItem = props => {
+const AlarmItem = props => {
     return (
         <>
             {
@@ -42,4 +42,4 @@ const AlertItem = props => {
     );
 };
 
-export default AlertItem;
+export default AlarmItem;
