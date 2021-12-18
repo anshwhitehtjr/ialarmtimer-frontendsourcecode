@@ -27,11 +27,11 @@ const Alarm = () => {
                     time='7:00am'
                     desc="This is a desc bro, but please wake me up on 7am as i have exam" />
             </div>
-            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal fade" id="addAlarm" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="addAlarmLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <h5 className="modal-title" id="addAlarmLabel">Modal title</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
@@ -98,7 +98,7 @@ const Alarm = () => {
                     </div>
                 </div>
             </div>
-            <button style={ { float: 'right' } } className="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button style={ { float: 'right' } } className="btn btn-info" data-bs-toggle="modal" data-bs-target="#addAlarm">
                 + Add A Alarm
             </button>
             <button style={ { float: 'right' } } onClick={ handleEditMode } className="btn btn-secondary" >
